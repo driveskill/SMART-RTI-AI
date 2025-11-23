@@ -1,4 +1,5 @@
-<!DOCTYPE html>  <html lang="en">  
+<!DOCTYPE html>  
+<html lang="en">  
 <head>  
 <meta charset="UTF-8" />  
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
@@ -50,9 +51,15 @@
     margin-bottom:10px;  
     white-space: pre-line; /* preserves line breaks */  
   }  
-</style>  </head>  <body>  <div class="container">  <button class="logout-btn" onclick="logout()">Logout</button>
+</style>
+  </head> 
+ <body> 
+ <div class="container"> 
+ <button class="logout-btn" onclick="logout()">Logout</button>
 
-  <h2>Smart RTI Form</h2>    <form id="rtiForm">  <label for="regNo">Registration No</label>
+  <h2>Smart RTI Form</h2>  
+  <form id="rtiForm"> 
+<label for="regNo">Registration No</label>
 <input type="text" id="regNo" readonly>
 <!-- STATE -->
 <select id="state" required onchange="loadDepartments()">
@@ -112,18 +119,19 @@
 <button type="button" class="submit-btn" onclick="submitRTI()">Submit RTI</button>
 
   </form>  
-</div>  
+</div>
 <script src="https://api.backendless.com/sdk/js/latest/backendless.min.js"></script>  
-
 <script>
-
 // ====== HELPER ======
 const id = x => document.getElementById(x);
 
 // ====== BACKENDLESS INIT ======
 Backendless.initApp(
-  "A1EFA0A2-9F5F-4AB4-B41A-34610BD8119F",
-  "F7F4D0E1-9677-4715-8C0E-F1FD819B9D69"
+  "A1EFA0A2-9F5F-4AB4-B41A
+        -34610BD8119F",
+
+  "F7F4D0E1-9677-4715-8C0E-
+        F1FD819B9D69"
 );
 
 // ====== LOGIN CHECK ======
